@@ -56,3 +56,6 @@ garage = [Car("Toyota"), ElectricCar("BYD", 60), Truck("Volvo")]
 for vehicle in garage:
     print(f"{vehicle.model}: ", end="")
     vehicle.make_sound()
+
+
+######
