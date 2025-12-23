@@ -1,10 +1,12 @@
 class Car:
-    def __init__(self, model):
+    def __init__(self, model,):
         self.model = model
-        self.__mileage = 0 
+        self.__mileage = 0
 
     def drive(self):
+        self.is_moving = True
         print(f"{self.model} is driving!")
+
 
     def read_mileage(self):
         print(f"This car has {self.__mileage} miles on it.")
@@ -42,9 +44,11 @@ print("--- Testing Inheritance & Encapsulation ---")
 my_ev = ElectricCar("Tesla Model 3", 75)
 my_ev.drive()
 my_ev.charge()
-my_ev.update_mileage(150)
+my_ev.update_mileage(10)
 my_ev.read_mileage()
 my_ev.update_mileage(100) 
+#my_ev.apply_brake()
+
 
 print("\n--- Testing Polymorphism ---")
 garage = [Car("Toyota"), ElectricCar("BYD", 60), Truck("Volvo")]
