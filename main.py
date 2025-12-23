@@ -4,12 +4,16 @@ class Car:
         self.__mileage = 0
 
     def drive(self):
+        self.is_moving = True
         print(f"{self.model} is driving!")
 
+<<<<<<< HEAD
     # def apply_brake(self):
     #     print("Slowing down...")
     #     self.is_moving = False
 
+=======
+>>>>>>> feature-brake
 
     def read_mileage(self):
         print(f"This car has {self.__mileage} miles on it.")
@@ -50,7 +54,11 @@ my_ev.charge()
 my_ev.update_mileage(10)
 my_ev.read_mileage()
 my_ev.update_mileage(100) 
+<<<<<<< HEAD
 my_ev.apply_brake()
+=======
+#my_ev.apply_brake()
+>>>>>>> feature-brake
 
 
 print("\n--- Testing Polymorphism ---")
@@ -59,3 +67,6 @@ garage = [Car("Toyota"), ElectricCar("BYD", 60), Truck("Volvo")]
 for vehicle in garage:
     print(f"{vehicle.model}: ", end="")
     vehicle.make_sound()
+
+
+######
